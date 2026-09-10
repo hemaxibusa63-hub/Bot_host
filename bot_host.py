@@ -16,10 +16,10 @@ import requests
 # MULTI-CLIENT TELEGRAM PYTHON HOST
 # ============================================================
 
-BOT_TOKEN = "PUT_YOUR_HOST_BOT_TOKEN_HERE"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 # Apna Telegram Chat ID yahan daalo
-OWNER_CHAT_ID = 123456789
+OWNER_CHAT_ID = int(os.getenv("OWNER_CHAT_ID"))
 
 BRAND = "KRUTIK CYBER EXPERT"
 
